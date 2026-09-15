@@ -73,7 +73,7 @@ for i in range(87, 46, -1):
 ### Read and write by index
 
 ```python
-faculty = ["Bannock", "Joshi", "Ziren", "Sedekpour", "Verdicchio"]
+faculty = ["Banik", "Joshi", "Zareen", "Sedeghpour", "Verdicchio"]
 
 print(faculty[1])       # Joshi
 faculty[4] = "Dr. V"    # overwrites last item
@@ -110,8 +110,8 @@ Accessing an index outside the list's bounds — positive or negative — raises
 ### Checking membership with `in`
 
 ```python
-if "Dr. Haney" in faculty:
-    location = faculty.index("Dr. Haney")
+if "Dr. Hayne" in faculty:
+    location = faculty.index("Dr. Hayne")
     print(location)
 else:
     print("Not found")
@@ -134,8 +134,8 @@ Use `in` before calling `index()` on something that might not be there.
 
 **`append` vs `extend`:**
 ```python
-faculty.append(["Ziren", "Sedekpour"])  # adds one sub-list — length grows by 1
-faculty.extend(["Ziren", "Sedekpour"])  # unpacks — length grows by 2
+faculty.append(["Zareen", "Sadeghpour"])  # adds one sub-list — length grows by 1
+faculty.extend(["Zareen", "Sadeghpour"])  # unpacks — length grows by 2
 ```
 
 **`reverse()` returns `None`** — don't try to print its return value. Call it, then print the list:
