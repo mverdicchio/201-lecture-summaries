@@ -11,3 +11,5 @@ Introduction to Computer Science &middot; The Citadel &middot; Fall 2026
 - **[Sept 9 — Module 1 (fin. + workshop)](lectures/2026-09-09%20-%20module1-workshop.md)** — Combining match cases with `|`, and the Module 1 workshop on test-driver style functions.
 - **[Sept 11 — Module 2: Loops](lectures/2026-09-11%20-%20module2.md)** — While loops, for loops, `range()`, `break`/`continue`, input validation pattern, and intro to lists.
 - **[Sept 14 — Module 2 (cont.)](lectures/2026-09-14%20-%20module2-cont.md)** — Loop practice, `range()` with start/stop/step, list methods (`append`, `extend`, `remove`, `insert`, `index`, `reverse`), and a preview of dictionaries.
+- **[Sept 16 — Module 2 (cont.)](lectures/2026-09-16%20-%20module2-dicts.md)** — `pop()` and `clear()`, history/undo program demo, dictionaries (key-value syntax, looping, list of dicts), and intro to tuples.
+- **[Sept 18 — Module 2 (cont.)](lectures/2026-09-18%20-%20module2-cont2.md)** — Tuples, tuple unpacking, `str.split()`, string slicing with start/stop/step, reversing strings, and code tracing.
