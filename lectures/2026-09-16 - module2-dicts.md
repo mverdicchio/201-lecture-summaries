@@ -69,8 +69,8 @@ Key observations:
 ### The problem with parallel lists
 
 ```python
-faculty = ["Bannock", "Joshi", "Shaddy", "Verdicchio"]
-ranks   = ["Colonel", "LTC",   "Captain", "LTC"]
+faculty = ["Banik", "Joshi", "Shadi", "Verdicchio"]
+ranks   = ["COL", "LTC",   "CPT", "LTC"]
 ```
 
 These only work as long as the indexes stay aligned. Accidentally adding or deleting from one list breaks the pairing. A **dictionary** solves this by bundling the two pieces of data together as a key–value pair.
@@ -79,9 +79,9 @@ These only work as long as the indexes stay aligned. Accidentally adding or dele
 
 ```python
 faculty_ranks = {
-    "Bannock":     "Colonel",
+    "Banik":     "COL",
     "Joshi":       "LTC",
-    "Shaddy":      "Captain",
+    "Shadi":      "CPT",
     "Verdicchio":  "LTC",
 }
 ```
@@ -92,10 +92,10 @@ Curly braces `{}` define the dictionary. Each entry is `key: value`. Keys must b
 
 ```python
 # Read a value
-print(faculty_ranks["Bannock"])   # "Colonel"
+print(faculty_ranks["Banik"])   # "COL"
 
 # Add a new entry (or overwrite an existing one)
-faculty_ranks["Lil Bannock"] = "Captain"
+faculty_ranks["Lil Banik"] = "CPT"
 ```
 
 This looks exactly like list indexing, except you put a **key** in the brackets instead of an integer index.
@@ -111,11 +111,11 @@ for professor in faculty_ranks:
 
 Output:
 ```
-Bannock has rank Colonel
+Banik has rank COL
 Joshi has rank LTC
-Shaddy has rank Captain
+Shadi has rank CPT
 Verdicchio has rank LTC
-Lil Bannock has rank Captain
+Lil Banik has rank CPT
 ```
 
 Use the key inside the loop to look up the corresponding value.
@@ -127,14 +127,14 @@ Use the key inside the loop to look up the corresponding value.
 When every dictionary in a list shares the same key set, the result behaves like a spreadsheet or database table — each dictionary is a row, each key is a column.
 
 ```python
-dr_bannock  = {"name": "Bannock",    "rank": "Colonel", "area": "Leadership"}
+dr_Banik  = {"name": "Banik",    "rank": "COL", "area": "Leadership"}
 dr_joshi    = {"name": "Joshi",      "rank": "LTC",     "area": "AI/ML"}
-dr_shaddy   = {"name": "Shaddy",     "rank": "Captain", "area": "Cyber Ops"}
+dr_Shadi   = {"name": "Shadi",     "rank": "CPT", "area": "Cyber Ops"}
 dr_v        = {"name": "Verdicchio", "rank": "LTC",     "area": "CS Education"}
 
 # Four separate dicts, identical key set: "name", "rank", "area"
 
-faculty = [dr_bannock, dr_joshi, dr_shaddy, dr_v]
+faculty = [dr_Banik, dr_joshi, dr_Shadi, dr_v]
 
 for prof in faculty:
     print(prof["name"], "|", prof["rank"], "|", prof["area"])
